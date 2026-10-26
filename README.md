@@ -133,3 +133,5 @@ sudo dmesg | grep -i "1963\|tonex" | tail -20
 # Run initialization manually (without replug)
 sudo /usr/local/lib/tonex-init/tonex_udev_init.sh
 ```
+
+If recording fails but playback works, check that lsusb shows a product ID listed in `/etc/udev/rules.d/99-tonex.rules`.
